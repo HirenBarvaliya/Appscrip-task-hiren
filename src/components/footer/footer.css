@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 40px 20px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-top, .footer-bottom {
+    display: grid;
+    gap: 20px;
+}
+
+.footer-top {
+    grid-template-columns: 60% 40%;
+}
+
+.footer-top-left, .footer-top-right, .footer-bottom-left-col, .footer-bottom-right {
+  padding: 10px;
+}
+
+.email-input {
+  padding: 10px;
+  width: 20rem;
+  color: #4c4c4c;
+  margin-right: 5px;
+  margin-bottom: 8px;
+}
+
+.subscribe-btn {
+  width: 10rem;
+  padding: 12px;
+  border: 1px solid #4c4c4c;
+  background-color: #000;
+  color: #4c4c4c;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer-quick-link {
+  padding: 0px !important;
+}
+
+.footer-bottom-left-col ul li {
+  display: inline-block;
+  padding: 7px 0px !important;
+}
+
+.footer-bottom-left-col ul li a {
+  color: #fff;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #555;
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    grid-template-columns: 60% 40%;
+}
+
+.footer-bottom-left {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+    .footer-top, .footer-bottom {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-bottom-left {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Additional padding for smaller screens */
+@media (max-width: 768px) {
+    .footer-top-left, .footer-top-right, .footer-bottom-left-col, .footer-bottom-right {
+        padding: 10px;
+    }
+
+    .divider {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 375px) {
+  .email-input {
+    width: 15rem;
+  }
+}
+
+
