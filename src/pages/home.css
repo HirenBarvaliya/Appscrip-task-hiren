@@ -1,3 +1,7 @@
+.mobile-title {
+    display: none;
+  }
+
 .filter-heading {
   width: 96%;
   display: flex;
@@ -106,7 +110,6 @@ h1 {
 }
 .main-content {
   flex: 1;
-  /* padding: 15px; */
   transition: margin-left 0.3s;
 }
 
@@ -114,9 +117,9 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  justify-content: center;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .inner-filter-heading {
     width: 35%;
@@ -137,6 +140,9 @@ h1 {
   }
   .mobile-filter {
       display: block;
+  }
+    .mobile-title{
+    display: block;
   }
 }
 

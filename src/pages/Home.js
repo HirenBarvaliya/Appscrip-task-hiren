@@ -34,7 +34,7 @@ function Home() {
         <meta name="description" content="This is home page." />
       </Helmet>
       <div className="container">
-        <p><span style={{ color: '#c7cfd3', paddingLeft: '8px' }}>HOME  |</span>  SHOP</p>
+        <p className='mobile-title'><span style={{ color: '#c7cfd3', paddingLeft: '8px' }}>HOME  |</span>  SHOP</p>
         <h1 style={{ textAlign: 'center' }}>DISCOVER OUR PRODUCTS</h1>
         <p style={{ textAlign: 'center' }}>Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus <br /> scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor.</p>
         <div className='filter-heading'>
