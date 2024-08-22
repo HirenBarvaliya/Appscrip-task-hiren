@@ -4,7 +4,8 @@ import Card from '../components/common/card/Card';
 import DownArrow from '../assets/svg/DownArrow';
 import SideFilter from '../components/common/sidefilter/SideFilter';
 import TrueIcon from '../assets/svg/TrueIcon';
-import { flterOptions, ProductData } from '../utils/commonArray';
+import { filterOptions, ProductData } from '../utils/commonArray';
+import { Helmet } from 'react-helmet';
 
 function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -28,8 +29,12 @@ function Home() {
 
   return (
     <>
-      <div class="container">
-        <h1 style={{ textAlign: 'center' }}>DISCOVER OUR PRODUCTS</h1>
+      <Helmet>
+        <title>Home</title>
+        <meta name="description" content="This is home page." />
+      </Helmet>
+      <div className="">
+        <h1 style={{ textAlign: 'center', fontSize: '4vw' }}>DISCOVER OUR PRODUCTS</h1>
         <p style={{ textAlign: 'center' }}>Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus <br /> scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor.</p>
         <div className='filter-heading'>
           <div className='inner-filter-heading'>
@@ -44,7 +49,7 @@ function Home() {
             </div>
             {isOpen && (
               <div className="dropdown-menu">
-                {flterOptions.map(option => (
+                {filterOptions.map(option => (
                   <div
                     key={option.value}
                     className={`dropdown-item ${selected === option ? 'selected' : ''}`}
@@ -82,7 +87,7 @@ function Home() {
           </aside> : ''}
           <main className="main-content">
             <div className="product-list">
-              <div class="card-container">
+              <div className="card-container">
                 {ProductData.map((ele, i) => (
                   <Card item={ele} index={i} key={i} />
                 ))}

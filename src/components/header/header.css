@@ -116,3 +116,29 @@
     padding: 10px 20px;
   }
 }
+
+@media (max-width: 425px) {
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+  }
+
+  .menu a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+  }
+}

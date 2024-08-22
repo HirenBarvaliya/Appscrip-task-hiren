@@ -19,7 +19,7 @@ export const ProductData = [
     { name: 'Product Name', img: '../assets/images/Product12.png' }
 ];
 
-export const flterOptions = [
+export const filterOptions = [
     { value: '1', label: 'Recommended' },
     { value: '2', label: 'Newest First' },
     { value: '3', label: 'Popular' },
