@@ -8,7 +8,7 @@ import { filterOptions, ProductData } from '../utils/commonArray';
 import { Helmet } from 'react-helmet';
 
 function Home() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isSelectedFilter, setIsSelectFilter] = useState({
     ideal_for: 'All',
     occasion: 'All',
