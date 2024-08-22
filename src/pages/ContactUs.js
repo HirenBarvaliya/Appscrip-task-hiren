@@ -8,7 +8,7 @@ function ContactUs() {
                 <title>Contact Us</title>
                 <meta name="description" content="This is Contact Us page." />
             </Helmet>
-            <div>Contact Us</div>
+            <h1>Contact Us</h1>
         </>
     )
 }

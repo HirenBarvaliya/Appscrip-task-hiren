@@ -8,7 +8,7 @@ function Stories() {
                 <title>Stories</title>
                 <meta name="description" content="This is Stories page." />
             </Helmet>
-            <div>Stories</div>
+            <h1>Stories</h1>
         </>
     )
 }

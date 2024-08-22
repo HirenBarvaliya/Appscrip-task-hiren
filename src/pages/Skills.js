@@ -8,7 +8,7 @@ function Skills() {
                 <title>Skills</title>
                 <meta name="description" content="This is Skills page." />
             </Helmet>
-            <div>Skills</div>
+            <h1>Skills</h1>
         </>
     )
 }

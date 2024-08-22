@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import './header.css'
 import Logo from '../../assets/svg/Logo'
 import MenuIcon from '../../assets/svg/MenuIcon'
-import ActiveHeart from '../../assets/svg/ActiveHeart'
 import CartIcon from '../../assets/svg/CartIcon'
 import SearchIcon from '../../assets/svg/SearchIcon'
 import UserIcon from '../../assets/svg/UserIcon'
+import InactiveHeart from '../../assets/svg/InactiveHeart'
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +29,7 @@ function Header() {
                     </div>
                     <div className="header-right">
                         <div className="icon search"><SearchIcon /></div>
-                        <div className="icon heart"><ActiveHeart /></div>
+                        <div className="icon heart"><InactiveHeart /></div>
                         <div className="icon cart"><CartIcon /></div>
                         <div className="icon user"><UserIcon /></div>
                     </div>

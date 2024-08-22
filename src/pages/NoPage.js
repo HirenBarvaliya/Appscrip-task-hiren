@@ -8,7 +8,7 @@ function NoPage() {
                 <title>Page Not Found</title>
                 <meta name="description" content="Page Not Found" />
             </Helmet>
-            <div>Page Not Found</div>
+            <h1>Page Not Found</h1>
         </>
     )
 }

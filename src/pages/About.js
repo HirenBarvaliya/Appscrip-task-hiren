@@ -8,7 +8,7 @@ function About() {
                 <title>About</title>
                 <meta name="description" content="This is About page." />
             </Helmet>
-            <div>About Us</div>
+            <h1>About Us</h1>
         </>
     )
 }

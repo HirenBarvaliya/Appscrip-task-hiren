@@ -33,12 +33,13 @@ function Home() {
         <title>Home</title>
         <meta name="description" content="This is home page." />
       </Helmet>
-      <div className="">
-        <h1 style={{ textAlign: 'center', fontSize: '4vw' }}>DISCOVER OUR PRODUCTS</h1>
+      <div className="container">
+        <p><span style={{ color: '#c7cfd3', paddingLeft: '8px' }}>HOME  |</span>  SHOP</p>
+        <h1 style={{ textAlign: 'center' }}>DISCOVER OUR PRODUCTS</h1>
         <p style={{ textAlign: 'center' }}>Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus <br /> scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor.</p>
         <div className='filter-heading'>
           <div className='inner-filter-heading'>
-            <p>3425 ITEMS</p>
+            <p><b>3425 ITEMS</b></p>
             <button className='show-hide-filter' onClick={() => setIsSidebarOpen(!isSidebarOpen)}>{isSidebarOpen ? '< HIDE FILTER' : '> SHOW FILTER'}</button>
           </div>
           <div className='mobile-filter'>FILTER</div>
